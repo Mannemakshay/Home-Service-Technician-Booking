@@ -1,0 +1,28 @@
+{
+  "name": "mini-project",
+  "version": "1.0.0",
+  "description": "Home service booking application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js",
+    "seed": "node seedServices.js",
+    "seed-admin": "node seedAdmin.js",
+    "dev": "concurrently \"npm run start\" \"cd frontend && npm run dev\""
+  },
+  "keywords": ["home-service", "booking", "technician", "repair"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "concurrently": "^8.2.2"
+  }
+}
